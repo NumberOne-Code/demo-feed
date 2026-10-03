@@ -1,0 +1,511 @@
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>Business Community Feed - Kerala Leaders Club</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=Manjari:wght@400;700&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Inter"', 'sans-serif'],
+            malayalam: ['"Manjari"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              500: '#06b6d4',
+              600: '#0891b2',
+              700: '#0e7490',
+              800: '#155e75',
+              900: '#164e63',
+            },
+            tealAccent: {
+              DEFAULT: '#00877a',
+              light: '#e6f4f2',
+              hover: '#007065'
+            }
+          },
+          boxShadow: {
+            'subtle': '0 2px 10px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.02)',
+            'card': '0 4px 18px -2px rgba(14, 116, 144, 0.06), 0 2px 6px -1px rgba(0,0,0,0.02)',
+            'floating': '0 10px 25px -5px rgba(8, 145, 178, 0.4)'
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="custom-scrollbars-and-tweaks">
+    /* Hide horizontal scrollbar for clean story reel */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    
+    /* Clamp utilities */
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    body {
+      -webkit-tap-highlight-color: transparent;
+      background-color: #f1f8f7;
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="font-sans text-slate-800 antialiased min-h-screen pb-24 selection:bg-teal-100 selection:text-teal-900">
+<!-- Mobile Screen Container Constraint -->
+<div class="max-w-md mx-auto min-h-screen bg-[#f3f9f8] shadow-2xl relative flex flex-col">
+<!-- BEGIN: TopAppHeader -->
+<!-- Sticky compact header with user status and primary quick actions -->
+<header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-teal-100/60 px-4 transition-all py-2" data-purpose="primary-header">
+<div class="flex items-center justify-between gap-3">
+<!-- User Profile Pill -->
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative flex-shrink-0">
+<!-- Provided profile image / avatar -->
+<div class="w-10 h-10 rounded-full ring-2 ring-amber-400 p-0.5 overflow-hidden shadow-sm bg-amber-50">
+<img alt="Arjun Hari" class="w-full h-full object-cover rounded-full object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnx_IikIdAgwTsVWIOEXwzWTtEFV25PyTCpGhAH9aXfIjF9nFzpsQNWzyS99sK77Az2odzxwXm85L90_PtfhwT9psvbXbPQyqkrFqFosycRAkeLako4FI4q8ZCdswS5Yhafhj2RMn-Ey3IJ5GKv2HBHp3GQgyCiP-bGH220_Ufqaoct5GQ85tuM9vZiQOzwsDBTEJLlpcJd5nPp10j2RLGkwW5hHpSyQroH1shKWoCHrs3Xl-_ZyvBthgpyPR-EK9pMA">
+</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white rounded-full"></span>
+</div>
+<div class="truncate">
+<div class="flex items-center gap-1">
+<span class="text-xs text-slate-500 font-medium">Hi,</span>
+<h1 class="text-sm font-bold text-slate-900 tracking-tight truncate">Arjun Hari</h1>
+<svg class="w-3.5 h-3.5 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+<path clip-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path>
+</svg>
+</div>
+<p class="text-[11px] text-slate-500 flex items-center gap-0.5 truncate">
+<svg class="w-3 h-3 text-teal-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+              Kozhikode, Kerala
+            </p>
+</div>
+</div>
+<!-- Action Icons Cluster -->
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<!-- Notification Bell -->
+<button aria-label="Notifications" class="relative p-2 rounded-full text-slate-600 hover:text-teal-700 hover:bg-teal-50 transition active:scale-95" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 bg-amber-500 rounded-full ring-2 ring-white"></span>
+</button>
+<!-- QR Code Scanner -->
+<button aria-label="QR Scanner" class="p-2 rounded-full text-slate-600 hover:text-teal-700 hover:bg-teal-50 transition active:scale-95" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<!-- Messages -->
+<button aria-label="Messages" class="relative p-2 rounded-full text-slate-600 hover:text-teal-700 hover:bg-teal-50 transition active:scale-95" type="button">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 bg-teal-600 rounded-full ring-2 ring-white"></span>
+</button>
+</div>
+</div>
+<!-- BEGIN: ModeSwitchToggle -->
+<!-- Noticeable quick pill toggle to effortlessly switch between Feed and Discover -->
+<!-- END: ModeSwitchToggle -->
+</header>
+<!-- END: TopAppHeader -->
+<!-- Feed Body Content -->
+<main class="flex-1 pt-3 space-y-3.5">
+<!-- BEGIN: CompactCreatePostBar -->
+<section class="bg-white shadow-subtle border-teal-100/70 border-y px-4 py-2.5" data-purpose="create-post-widget">
+<div class="flex items-center gap-2">
+<!-- Text Placeholder Trigger -->
+<div class="flex-1 flex items-center bg-slate-50 hover:bg-slate-100/80 rounded-xl px-3 py-2 cursor-pointer transition border border-slate-100">
+<span class="text-xs text-slate-400 font-medium select-none truncate">Inspire with your story or promote...</span>
+</div>
+<!-- Quick Action Buttons: High-Contrast Discover Hub Button & Post Draft -->
+<div class="flex items-center gap-1.5">
+<!-- Replaced tiny ambiguous button with prominent high-contrast Discover Hub badge/button -->
+<a class="px-2.5 py-1.5 rounded-xl bg-gradient-to-r from-teal-700 via-teal-600 to-cyan-600 text-white shadow-sm hover:opacity-95 transition active:scale-95 flex items-center gap-1.5 flex-shrink-0" href="#discover-hub" title="Discover Products &amp; Services">
+<span class="text-xs">✨</span>
+<div class="text-left leading-none">
+<div class="text-[11px] font-bold tracking-tight">Discover Hub</div>
+</div>
+</a>
+</div>
+</div>
+<!-- Compact quick tags for posting -->
+</section>
+<!-- END: CompactCreatePostBar -->
+<!-- BEGIN: InFeedDiscoverHeroCard -->
+<!-- Dedicated compact high-converting banner card directly below Create Post box -->
+<section class="bg-gradient-to-br from-teal-900 via-teal-800 to-slate-900 shadow-md border-teal-600/30 text-white relative overflow-hidden border-y px-4 py-5" id="discover-hub">
+<div class="absolute -right-10 -top-10 w-36 h-36 bg-cyan-400/15 rounded-full blur-2xl pointer-events-none"></div>
+<div class="absolute right-3 top-3 w-16 h-16 bg-emerald-500/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10">
+<div class="flex items-start justify-between gap-2 mb-1.5">
+<div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-teal-400/20 border border-teal-300/30 text-[10px] font-bold text-teal-200 tracking-wide uppercase">
+<span class=""><br></span>
+<span class="w-1 h-1 rounded-full bg-teal-300"></span>
+<span class="">Verified</span>
+</div>
+</div>
+<h2 class="text-sm font-bold leading-tight text-white mb-1">Businesses, Products, Services &amp; Requirements</h2>
+<p class="text-[11px] text-teal-100/90 leading-snug mb-3">
+          Curated local manufacturers, verified enterprise services, supplies, and wholesale deals.
+        </p>
+<!-- Category Quick-Chips -->
+<div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar mb-3 text-[11px] font-medium">
+<a class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-white whitespace-nowrap flex items-center gap-1 transition" href="#">
+<span class="">📦</span> Products
+          </a>
+<a class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-white whitespace-nowrap flex items-center gap-1 transition" href="#">
+<span class="">💼</span> Services
+          </a>
+<a class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-white whitespace-nowrap flex items-center gap-1 transition" href="#">
+<span class="">⚙️</span> Machinery
+          </a>
+<a class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 border border-white/15 text-white whitespace-nowrap flex items-center gap-1 transition" href="#">
+<span class="">🛍️</span> FMCG
+          </a>
+</div>
+<!-- Bold CTA with quick return guidance -->
+<div class="flex items-center justify-between gap-2 pt-1 border-t border-white/10">
+<span class="text-[10px] text-teal-200 flex items-center gap-1 font-medium"></span>
+<a class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-200 text-slate-950 font-bold text-xs shadow-md transition active:scale-95" href="#">
+<span class="">Explore Discover</span>
+<svg class="w-3.5 h-3.5 stroke-current" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+</a>
+</div>
+</div>
+</section>
+<!-- END: InFeedDiscoverHeroCard -->
+<!-- BEGIN: CompactShortsSection -->
+<article class="bg-white shadow-subtle border-teal-100/70 overflow-hidden flex flex-col mb-3.5 border-y" data-purpose="feed-post-showcase-devika"><div class="p-3.5 pb-2 flex items-start justify-between gap-2 px-4"><div class="flex items-start gap-2.5 min-w-0 flex-1"><div class="relative flex-shrink-0"><div class="w-10 h-10 rounded-full ring-2 ring-amber-400 p-0.5 overflow-hidden shadow-sm bg-amber-50"><img alt="Devika Warrier" class="w-full h-full object-cover rounded-full" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=120&amp;h=120&amp;q=80"></div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white rounded-full"></span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-1 min-w-0"><span class="text-xs font-bold text-slate-900 truncate">Devika Warrier</span><svg class="w-3.5 h-3.5 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg></div><div class="flex items-center gap-1 mt-0.5 flex-wrap"><span class="text-[9px] px-1 py-0.5 rounded bg-amber-100 text-amber-800 font-bold uppercase leading-none">GOLD</span><span class="text-[9px] px-1 py-0.5 rounded bg-teal-50 text-teal-700 font-semibold leading-none">Member</span></div><p class="text-[11px] text-slate-500 mt-0.5 truncate">Founder &amp; Managing Director at Munnar Green Sanctuary Resorts</p><div class="flex items-center gap-1 text-[10px] text-slate-400 mt-0.5"><span class="">12m ago</span><span class="">•</span><span class="flex items-center gap-0.5"><svg class="w-2.5 h-2.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Public</span></div></div></div><div class="flex items-center gap-1 flex-shrink-0"><button class="text-xs font-semibold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 hover:bg-teal-100 transition active:scale-95">+ Follow</button><button class="p-1 text-slate-400 hover:text-slate-600 rounded" title="Options"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div></div><div class="px-3.5 pb-2.5 px-4"><p class="text-xs text-slate-800 leading-relaxed">Proud to unveil Phase 2 of our eco-luxury sustainable villas nestled in the Western Ghats of Munnar. Designed with 100% solar capture, zero waste backwater runoff, and local stone craftsmanship. Welcoming Kerala Business Club members for exclusive corporate retreats!</p><div class="flex flex-wrap items-center gap-1 mt-2"><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#SustainableKerala</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#EcoTourism</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#Hospitality</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#GreenRetreats</a></div></div><div class="w-full overflow-hidden bg-slate-900 border-y border-slate-100"><img alt="Modern sustainable luxury resort architecture and boutique eco-villa pool in Munnar Kerala hills" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0E7bFdjP_U83bpkVKc1CZYck6cWinyUO1Svi32jujD8uROklWzWR3ZFVOrUQbb7LHesJmFjggAttkaX4CK7FWefH2ljfdhjMG07gNHJ3t-AlSULkU_sGG4UhRVvZ6TqKOoDJBR-LNRXdasfM4SFl_DN5eyYsq3vrJHUufBpOWgn-tc_s8RYFROzsUMGXzfAPpB70U-Mqs8qY5nhfZBflxiZJ0e1wzHv9qbibQ7zWqa7mJTZC-m899"></div><div class="px-3.5 py-2 flex items-center justify-between text-slate-500 text-[11px] border-b border-slate-100"><div class="flex items-center gap-1.5"><div class="flex items-center -space-x-1.5"><span class="w-4 h-4 rounded-full bg-teal-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">DW</span><span class="w-4 h-4 rounded-full bg-amber-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">RK</span></div><span class="font-semibold text-slate-600">84</span></div><div class="flex items-center gap-1.5 text-slate-400"><span class="hover:text-teal-700 transition cursor-pointer">18 comments</span><span class="">•</span><span class="hover:text-teal-700 transition cursor-pointer">9 reposts</span><span class="">•</span><span class="inline-flex items-center gap-0.5 hover:text-teal-700 transition"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"></path></svg>950</span></div></div><div class="px-2 py-1 flex items-center justify-around text-slate-500 text-xs font-semibold"><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Like</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Comment</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Repost</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg><span class="">Share</span></button></div></article><section class="bg-white shadow-subtle border-teal-100/70 border-y py-3" data-purpose="stories-reel">
+<div class="flex items-center justify-between mb-2 px-4">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-3.5 bg-teal-600 rounded-full"></span>
+<h2 class="text-xs font-bold uppercase tracking-wider text-slate-800">Shorts</h2>
+</div>
+<a class="text-xs font-semibold text-teal-700 hover:text-teal-800 flex items-center gap-0.5" href="#">
+            View All
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+<path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</a>
+</div>
+<!-- Horizontal Reel Cards -->
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 px-4 select-none">
+  <!-- Short Card 1 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Malayalam Motivational" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHxQTWBwBiFf83cOlZIvRhjA9wQ7vSH9kBDuD_4f0KRZ7aKdlYudWVufAgUKnG2U9MMOV2bt1C0Ef--zoPZ6LzpAIDlotxv90hxCZ6GjtXHxXMymS41lbqwMo0uEiDXE61CkRqPSRlF24qNrhzr2TsKJ5SZyUwklD106pJzEceNWBwavvMsYon7KwImXE-GN6qP2QPW4GLO4vU0W7HH3cIwbAimaEgFAgOJkje2dZXVbxnzQcZFWLV">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Malayalam Motivational</p>
+      <span class="text-[10px] font-semibold text-teal-300 mt-0.5 inline-block">@coach_nair</span>
+    </div>
+  </div>
+
+  <!-- Short Card 2 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Kerala Startup Story" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_rbURuoCKoCQVEXBzrzUgMTH2X_Ek1VSb1UXtKGyi-Hw5phMbrwUEiGPpeiMyQQX5nGJF0-i6MfNvchmguEVv8Tcsj-st6HSfoep2wi6ZFFOyiWM7dtrrzDEychA5ysVjRXpG08qKPQ0QfstHT1qC36e_SPyBAcWe_C9CCD2t58TRMttgz5wIMaDa1oZ8VUYc3oJotXl_tTQF3NGtV-jA3n2V03hTf0rD4EeqV3lRKhqiXbZQpnig">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Kerala Startup Story</p>
+      <span class="text-[10px] font-semibold text-teal-300 mt-0.5 inline-block">#womenintech</span>
+    </div>
+  </div>
+
+  <!-- Short Card 3 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Diamond Crafting" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIw6rogUv5moIE3j3bYxZXWFDyIx_AZtqwB8A_sazxS3V-a93I-JnWX0I7V09k_Q5789leSrM6gIhN3QiHHi5uDnT62Fq1FHWzRR5UJiySvt4nenATZIAh-nWeuYbOhyNtGVx-9MHhenxHbTDGf4Mvtlt1svU8Qly4YYJCnEMgbx2MHJz54B433EsAxX8AsGkNqFwT8OFlEdWWVnreP0CsJd18t2ZNOsvXYPKMRtVP_OocEaLVZy3M">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Diamond Crafting 💎</p>
+      <span class="text-[10px] font-semibold text-amber-300 mt-0.5 inline-block">Jewelry Business</span>
+    </div>
+  </div>
+
+  <!-- Short Card 4 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Artisanal Coffee Brew" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0to5wJOPempJYqwsvZ3QxDA4MR6OuzfOPkbur9xmnFR9qp-4lboYiQWxQ124uBO2kKD403czG80eCrHFsYrCgPv2Da86EQZVYtOBQusB4p6ZCvKDrn0iglsxtyJnR_JItkvmLNd1x5XmZVi5YJ7wpH5k_kxq8OkioFt09gcmhCOQxfecZeKHdXVF-LCuo1va8mXGl0i9i5p1X1k3dbMg_6ul1sMKaeuChx8V6dyr34qYgLliwQRY4">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Artisanal Coffee Brew</p>
+      <span class="text-[10px] font-semibold text-amber-300 mt-0.5 inline-block">Wayanad Roast</span>
+    </div>
+  </div>
+
+  <!-- Short Card 5 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Smart Robotics SEZ" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhvN2q4SU4N-UyTfIHGZR-TrfUdyo_aJb9_HLVeFtCBUdVp_ecaI8F9Ra3Fa7EyKbAQGRnf6og9btSTIWrtmbBm78pN0P0nZXpBiQ4F22j_313OeC0ziy-IOR2N81b6dKCPXWWGf2nwtjnqBFLuQcl-ufGPaOWTSdBwAKj6Uti_F1fBj5otr5zvnVnUEq2iKaTnQzuxwyaq5vZO_KIW8xCvsUBGPOC_L8m-LIfd9VB7MgBVEbFrH4C">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Smart Robotics SEZ</p>
+      <span class="text-[10px] font-semibold text-teal-300 mt-0.5 inline-block">#automation</span>
+    </div>
+  </div>
+
+  <!-- Short Card 6 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Luxury Backwater Stay" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY9EOwIN3fJ-EzcgeRR9MPhJDKOKTHSMperDVIbaOFlaP4hIoGqwBGZ6T_EXDFQFSvmf7QiHZPrNZg5Oulos_BHGdpSN9bdYjNbnQ4iupW0SEgI-zBF0ceiZVLj3T-bshsHf6K-dcOrdZf_VhgboXu4klkvzhgm7slsCzpAw7oI-Rzt1Ye2Q84gsPGAifAsx0OIVQ0gmmLJ1ajIklt4Jh65Li009t5gCYZIpFjBjSFjQl9z9WoNqHO">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Luxury Backwater Stay</p>
+      <span class="text-[10px] font-semibold text-amber-300 mt-0.5 inline-block">Kerala Tourism</span>
+    </div>
+  </div>
+
+  <!-- Short Card 7 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Spice Export Logistics" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkE5MG1is2RUDsO2D3P0eKOzv6EShnPqYY9J3GQEduNIgMsbvuENzLW2gzdZlc0_ADsYSQijt4WQawRYJK_Yu5dkcUFa4ntIPKiSn1JstDQK7PIKvqaS0THavCd4Rs8yQSdkhwNBoK74KcfzpvwJMNma-d0mbG57yqjnp3o_qTzF7fwy-Ql6uU1-P4GAv3viOd4YaUy95RwF7GWHbxVNveclvsVgZGdqsm5UgRZaWowFbsIVZoEboe">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Spice Export Logistics</p>
+      <span class="text-[10px] font-semibold text-amber-300 mt-0.5 inline-block">Cochin Hub</span>
+    </div>
+  </div>
+
+  <!-- Short Card 8 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Rooftop Solar Tech" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2kj7TUr9lSEqTxtUqtXvZa5Sbz1nt9fR_n7BEm-Rd6_0_QhvOEgpJdf4soUfCgoOwTDdxmrYdq085qaTa6hJPWI2_zrXYBhvEQlucIW5zon3lM2OctlciBK2rZq-6XE84A0caU0wKa6BnbiltvBSiN6vS3x6rg0BERvN76h99ow5RmCyeiy6szS2kJfZr1YfBQEjxSmZ7YVw7fbzvULfN7GvbHiDY6E4ynnSkWzoPiJ4vlF74q0j9">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Rooftop Solar Tech</p>
+      <span class="text-[10px] font-semibold text-teal-300 mt-0.5 inline-block">#cleantech</span>
+    </div>
+  </div>
+
+  <!-- Short Card 9 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Kerala Tech Podcast" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx-U9arqvC_zyHfO2MQsU0y1v4PCg3ajz5KITg2ehb4zpnHHcbaoS3F58TGXTtiaXw9TaCZ2tSfOafxgY0MMg3RFWeaxcAtfS9joaiL4seE-ucbksxg76Q13qFiJD_1svTeUjN7uMO2YEb7MjBjzTvjl0KilC-KQINb7k5LMdv2-FPx5XQCtcNXyItbaDBp6U1mMO4aw4O0k3edFJ78iw75l4VhPIHuSmKzmc30Q1iPHEyOV39T6dW">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Kerala Tech Podcast</p>
+      <span class="text-[10px] font-semibold text-teal-300 mt-0.5 inline-block">#founderlife</span>
+    </div>
+  </div>
+
+  <!-- Short Card 10 -->
+  <div class="w-32 h-52 relative rounded-2xl overflow-hidden shadow-sm border border-slate-100 group cursor-pointer flex-shrink-0 bg-slate-900">
+    <img alt="Factory IoT SCADA" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1WpQckFFkmnOnhdRQYNvbln7obCUz8gaUHOfRjx6kwTx-L49tQCc8k7Ql5tL3cx2cHLXf_r_7juw9t5yniMq_1u4XhdRfom7HIGSKZr1tnx1agEt4ZaUWi82vEXxyMxvn-QOTm3ZubE9yDOR5YQXnUNyoCZyp8UbuaF2e3IRsAFYyZ9WAALGqiJ1mTmD5mFoT90n-uE3fwVwIsKPeFumpLAXUP1aEScpandRil4m2ZBlxgoeMo">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent"></div>
+    <div class="absolute top-2 left-2 w-7 h-7 rounded-full bg-white/80 backdrop-blur-sm flex items-center justify-center text-slate-800 shadow">
+      <svg class="w-3.5 h-3.5 fill-current ml-0.5" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+    </div>
+    <div class="absolute bottom-2.5 left-2.5 right-2.5">
+      <p class="text-xs font-bold text-white leading-tight line-clamp-2 drop-shadow-sm">Factory IoT SCADA</p>
+      <span class="text-[10px] font-semibold text-teal-300 mt-0.5 inline-block">#industry40</span>
+    </div>
+  </div>
+</div>
+</section>
+<!-- END: CompactShortsSection -->
+<!-- BEGIN: FeaturedEventCard -->
+<!-- High contrast compact masterclass banner -->
+<section class="bg-white overflow-hidden border-teal-100/70 shadow-subtle border-y" data-purpose="featured-event-banner">
+<!-- Visual Header Banner -->
+<div class="relative bg-gradient-to-r from-[#0d2a4a] via-[#103b66] to-[#0e487f] text-white overflow-hidden px-4 py-4">
+<div class="absolute -right-6 -bottom-8 w-32 h-32 bg-teal-400/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-3">
+<div class="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 border-2 border-teal-300/40 shadow-md bg-slate-800">
+<img alt="Santosh Nair Workshop" class="w-full h-full object-cover object-top scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABcCMhvwrut7N6xZCRQCg4yVSuDcv19VzDCzl2PkwMhZr6OvKdnjSTqi_zyftZ2FXAQA_gyH-x1sr57BZ-ospNKtuM4TDsntR45LkIh0dD3bo8F5fvyOQR2LYL0RMUJiedWFWkPDzXDH0wtp0d-Jf5VjZwAtcCw7GTfQ1UGBp5PR96FcMzPuR854JGNiNZGpV0VyR3QmRSmfvydPcRtHMynhIngaSXY6XlnAKVEXiS_YN2KpHC5UwNfPvrOkfkmLaAsw">
+</div>
+<div class="flex-1 min-w-0">
+<div class="inline-block bg-teal-500/20 border border-teal-300/30 text-teal-200 text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 rounded-full mb-1">
+                T.I.G.E.R Santosh Nair
+              </div>
+<h3 class="text-xs font-bold leading-tight text-white">
+                Set Your Company's Direction: The Vision Framework
+              </h3>
+</div>
+</div>
+</div>
+<!-- Event Metadata Details -->
+<div class="bg-white flex items-center justify-between gap-2 px-4 py-3 flex-wrap">
+<div>
+<div class="flex items-center gap-1.5 text-slate-700 text-xs font-semibold">
+<svg class="w-3.5 h-3.5 text-teal-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="">15 Oct 2026 • 8:30 AM - 4:30 PM</span>
+</div>
+<div class="mt-1 flex items-center gap-2 text-[11px] text-slate-500 font-medium">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 font-semibold text-[10px]">
+                0 booked
+              </span>
+<span class="">• Kochi Executive Club</span>
+</div>
+</div>
+<button class="px-3.5 py-1.5 bg-teal-600 hover:bg-teal-700 active:scale-95 text-white font-bold text-xs rounded-xl shadow-sm transition">
+            Book Seat
+          </button>
+</div>
+</section>
+<!-- END: FeaturedEventCard -->
+<!-- BEGIN: FeedPost1_News -->
+<article class="bg-white shadow-subtle border-teal-100/70 overflow-hidden flex flex-col mb-3.5 border-y" data-purpose="feed-post-showcase"><div class="p-3.5 pb-2 flex items-start justify-between gap-2 px-4"><div class="flex items-start gap-2.5 min-w-0 flex-1"><div class="relative flex-shrink-0"><img alt="Arjun Hari" class="w-10 h-10 rounded-full object-cover ring-2 ring-amber-400 p-0.5 bg-amber-50" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnx_IikIdAgwTsVWIOEXwzWTtEFV25PyTCpGhAH9aXfIjF9nFzpsQNWzyS99sK77Az2odzxwXm85L90_PtfhwT9psvbXbPQyqkrFqFosycRAkeLako4FI4q8ZCdswS5Yhafhj2RMn-Ey3IJ5GKv2HBHp3GQgyCiP-bGH220_Ufqaoct5GQ85tuM9vZiQOzwsDBTEJLlpcJd5nPp10j2RLGkwW5hHpSyQroH1shKWoCHrs3Xl-_ZyvBthgpyPR-EK9pMA"><div class="absolute -bottom-1 -right-1 w-4 h-4 rounded bg-slate-900 text-white flex items-center justify-center border border-white"><span class="text-[8px] font-bold">W</span></div></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-1 min-w-0"><span class="text-xs font-bold text-slate-900 truncate">Arjun Hari</span><svg class="w-3.5 h-3.5 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg></div><div class="flex items-center gap-1 mt-0.5 flex-wrap"><span class="text-[9px] px-1 py-0.5 rounded bg-amber-100 text-amber-800 font-bold uppercase leading-none">GOLD</span><span class="text-[9px] px-1 py-0.5 rounded bg-teal-50 text-teal-700 font-semibold leading-none">Expert</span><span class="text-[9px] px-1 py-0.5 rounded bg-slate-100 text-slate-600 font-semibold leading-none">Mentor</span></div><p class="text-[11px] text-slate-500 mt-0.5">Founder &amp; CEO at WUDI Datatech</p><div class="flex items-center gap-1 text-[10px] text-slate-400 mt-0.5"><span class="">18m ago</span><span class="">•</span><span class="flex items-center gap-0.5"><svg class="w-2.5 h-2.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Public</span></div></div></div><div class="flex items-center gap-1 flex-shrink-0"><button class="text-xs font-semibold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 hover:bg-teal-100 transition active:scale-95">+ Follow</button><button class="p-1 text-slate-400 hover:text-slate-600 rounded" title="Options"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div></div><div class="px-3.5 pb-2.5 px-4"><p class="text-xs text-slate-800 leading-relaxed">Excited to showcase our enterprise IoT analytics suite tailored for Kerala's leading manufacturing units! 🚀 Industrial automation with real-time SCADA sync, predictive downtime diagnostics &amp; zero cloud lock-in.</p><div class="flex flex-wrap items-center gap-1 mt-2"><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#VentureKerala</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#IndustrialIoT</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#CloudComputing</a></div></div><div class="bg-slate-50 border-y border-slate-100 overflow-hidden"><div class="relative w-full h-44 bg-slate-900"><img alt="Enterprise IoT Hardware Controller Box" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFcXPtfF-hxdTMIwuS9DgGfI3lFEzrCAab59ykfulI56rspGbRc-I_qS6aq356d-V-96AnCzMXdUfZqqyCe4j5yXrkTUMFFhFjipO179V3aaGvx4_qZam0hTCZ2FOda0xCSYgLPe_Fh5HdoBUFyQ0gwdheLJIpOvodx_g0brcF-OjLY9nei8woWY3C30s_xvJU-0fIlf3u0L500dAgX6U35itQw1zW0B5x0hTJuwOqRTxhitdYNatP"><div class="absolute top-2 left-2 flex items-center px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-sm shadow-sm"><span class="text-[9px] font-bold text-slate-900 tracking-wider uppercase">CLOUD COMPUTING</span></div></div><div class="px-3.5 py-2.5 bg-white flex items-center justify-between gap-2"><div class="min-w-0 flex-1"><h3 class="text-xs font-bold text-slate-900 leading-snug">Enterprise Cloud &amp; Edge IoT Monitoring Suite</h3><p class="text-[10px] text-slate-500 mt-0.5">Verified B2B Solution • Turnkey Industry 4.0</p></div><div class="flex items-center gap-1.5 flex-shrink-0"><button class="h-8 px-2.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm active:scale-95 transition"><svg class="w-3 h-3 text-amber-300 fill-current" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg><span class="">Enquire</span></button><button class="h-8 px-2 rounded-lg bg-teal-50 hover:bg-teal-100 text-teal-700 text-[11px] font-semibold flex items-center gap-0.5 border border-teal-200/50 active:scale-95 transition"><span class="">Details</span><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17l10-10M7 7h10v10"></path></svg></button></div></div></div><div class="px-3.5 py-2 flex items-center justify-between text-slate-500 text-[11px] border-b border-slate-100"><div class="flex items-center gap-1.5"><div class="flex items-center -space-x-1.5"><img alt="Rajesh Kumar" class="w-4 h-4 rounded-full object-cover border border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmgt-TtexhO0315v_yS3D1uRr8hz-hZsReacGggMLUDEICCrWEznDIfK1ZZsT9oa5ACX6ft5AWcCFp-5UTZjq16T7a1p7s35ordtaz8Q-VtTI_loHXq2AJOVwpA-PZXamwljHhMpeYm6DZA8yq1WwMW5nyl3l2MAd7JBlCz5T91x9vhgehkg57rxWpSKZKCNjT9diuqvgXy9hb1KSNObF5kWsBtoTcUiB8_jXL2dXarB2HH2w_kZsK"><img alt="Deepa Nair" class="w-4 h-4 rounded-full object-cover border border-white" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRFrEwK19Gk1FTU64wZEScJJcVY3tXC1oHckJfFdNcLR2iXQkqxhRQke1Z3jzUiAKnGX6eJi37xS9WLJLZgxu9AztH3kQCFrV7rSjKVGPRDwGu8CXUWC9JmrQtIVWpABF6wjxPrBjZHMANECXc3SoQ-67Xq45324mWIflWdMsBSMt1NdcezD_0pQvyS_apnh3vq_0m_pLYNblRhRqRT6RaFtHsHh5kc5k6F3rgN1FQSEBTBATXed3i"></div><span class="font-semibold text-slate-600">144</span></div><div class="flex items-center gap-1.5 text-slate-400"><span class="hover:text-teal-700 transition cursor-pointer">28 comments</span><span class="">•</span><span class="hover:text-teal-700 transition cursor-pointer">14 reposts</span><span class="">•</span><span class="inline-flex items-center gap-0.5 hover:text-teal-700 transition"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"></path></svg>1.8k</span></div></div><div class="px-2 py-1 flex items-center justify-around text-slate-500 text-xs font-semibold"><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Like</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Comment</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Repost</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg><span class="">Share</span></button></div></article><article class="bg-white shadow-subtle border-teal-100/70 overflow-hidden flex flex-col mb-3.5 border-y" data-purpose="feed-post-text-mathew"><div class="p-3.5 pb-2 flex items-start justify-between gap-2 px-4"><div class="flex items-start gap-2.5 min-w-0 flex-1"><div class="relative flex-shrink-0"><div class="w-10 h-10 rounded-full bg-slate-100 ring-2 ring-slate-300 text-slate-800 flex items-center justify-center font-bold text-xs shadow-sm">MK</div><span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-emerald-500 border-2 border-white rounded-full"></span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-1 min-w-0"><span class="text-xs font-bold text-slate-900 truncate">Mathew K. Varghese</span><svg class="w-3.5 h-3.5 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg></div><div class="flex items-center gap-1 mt-0.5 flex-wrap"><span class="text-[9px] px-1 py-0.5 rounded bg-slate-100 text-slate-700 font-bold uppercase leading-none">SILVER</span><span class="text-[9px] px-1 py-0.5 rounded bg-teal-50 text-teal-700 font-semibold leading-none">Mentor</span></div><p class="text-[11px] text-slate-500 mt-0.5 truncate">Managing Partner at Malabar Angel Syndicate</p><div class="flex items-center gap-1 text-[10px] text-slate-400 mt-0.5"><span class="">1h ago</span><span class="">•</span><span class="flex items-center gap-0.5"><svg class="w-2.5 h-2.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Public</span></div></div></div><div class="flex items-center gap-1 flex-shrink-0"><button class="text-xs font-semibold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 hover:bg-teal-100 transition active:scale-95">+ Follow</button><button class="p-1 text-slate-400 hover:text-slate-600 rounded" title="Options"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div></div><div class="px-3.5 pb-3 px-4"><p class="text-xs text-slate-800 leading-relaxed">Kerala's deep-tech and hardware manufacturing space is seeing unprecedented seed-stage momentum this quarter. If you are building scalable B2B hardware or IoT telemetry in South India, our doors are open for mentorship.</p></div><div class="px-3.5 py-2 flex items-center justify-between text-slate-500 text-[11px] border-y border-slate-100"><div class="flex items-center gap-1.5"><div class="flex items-center -space-x-1.5"><span class="w-4 h-4 rounded-full bg-teal-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">AP</span><span class="w-4 h-4 rounded-full bg-amber-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">MV</span></div><span class="font-semibold text-slate-600">62</span></div><div class="flex items-center gap-1.5 text-slate-400"><span class="hover:text-teal-700 transition cursor-pointer">14 comments</span><span class="">•</span><span class="hover:text-teal-700 transition cursor-pointer">8 reposts</span><span class="">•</span><span class="inline-flex items-center gap-0.5 hover:text-teal-700 transition"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"></path></svg>1.1k</span></div></div><div class="px-2 py-1 flex items-center justify-around text-slate-500 text-xs font-semibold"><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Like</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Comment</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Repost</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg><span class="">Share</span></button></div><div class="bg-slate-50/80 px-4 py-3 border-t border-slate-100"><div class="flex items-start gap-2.5"><div class="w-7 h-7 rounded-full bg-teal-600 text-white flex items-center justify-center font-bold text-[10px] flex-shrink-0">AP</div><div class="flex-1 bg-white p-2.5 rounded-xl border border-slate-100 shadow-sm"><div class="mb-1"><div class="flex items-center justify-between gap-1"><div class="flex items-center gap-1 min-w-0"><span class="text-xs font-bold text-slate-900 truncate">Ananya Pillai</span><svg class="w-3 h-3 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg></div><span class="text-[10px] text-slate-400 flex-shrink-0">40m ago</span></div><p class="text-[10px] text-slate-500 truncate">Product Lead at InnoKerala</p></div><p class="text-xs text-slate-700 leading-snug">Fully resonate with this! Regional fabrication labs and fast-track seed capital are transforming rapid prototyping for campus startups across Malabar.</p><div class="flex items-center gap-3 mt-1.5 text-[10px] font-semibold text-slate-500"><button class="hover:text-teal-700 transition">Like</button><span class="">•</span><button class="hover:text-teal-700 transition">Reply</button></div></div></div><div class="mt-2 pl-9"><button class="text-[11px] font-semibold text-teal-700 hover:text-teal-800 transition">View all 14 comments ▾</button></div></div></article>
+<!-- END: FeedPost1_News -->
+<!-- BEGIN: FeedPost2_LocalBusiness -->
+<article class="bg-white shadow-subtle border-teal-100/70 overflow-hidden flex flex-col mb-3.5 border-y" data-purpose="feed-post-business-spotlight"><div class="p-3.5 pb-2 flex items-start justify-between gap-2 px-4"><div class="flex items-start gap-2.5 min-w-0 flex-1"><div class="relative flex-shrink-0"><div class="w-10 h-10 rounded-full bg-teal-50 ring-2 ring-teal-200 text-teal-800 flex items-center justify-center font-bold text-xs shadow-sm">AN</div><div class="absolute -bottom-1 -right-1 w-4 h-4 rounded bg-emerald-600 text-white flex items-center justify-center border border-white"><span class="text-[8px] font-bold">🌱</span></div></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-1 min-w-0"><span class="text-xs font-bold text-slate-900 truncate">Anilkumar NE</span><svg class="w-3.5 h-3.5 text-teal-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path clip-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg></div><div class="flex items-center gap-1 mt-0.5 flex-wrap"><span class="text-[9px] px-1 py-0.5 rounded bg-emerald-50 text-emerald-700 font-bold uppercase leading-none">MSME</span><span class="text-[9px] px-1 py-0.5 rounded bg-teal-50 text-teal-700 font-semibold leading-none">Food &amp; Hospitality</span></div><p class="text-[11px] text-slate-500 mt-0.5">Managing Partner at Mana Veg Foods • Koyilandy</p><div class="flex items-center gap-1 text-[10px] text-slate-400 mt-0.5"><span class="">25m ago</span><span class="">•</span><span class="flex items-center gap-0.5"><svg class="w-2.5 h-2.5 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><line x1="2" x2="22" y1="12" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Public</span></div></div></div><div class="flex items-center gap-1 flex-shrink-0"><button class="text-xs font-semibold px-2.5 py-1 rounded-full bg-teal-50 text-teal-700 hover:bg-teal-100 transition active:scale-95">+ Follow</button><button class="p-1 text-slate-400 hover:text-slate-600 rounded" title="Options"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z"></path></svg></button></div></div><div class="px-3.5 pb-2.5 px-4"><p class="text-xs text-slate-800 leading-relaxed">Pure vegetarian dining experience with authentic Kerala Sadhya vibe! Expanding bulk catering and corporate lunch subscriptions across Ulliyeri &amp; Koyilandy.</p><div class="flex flex-wrap items-center gap-1 mt-2"><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#KeralaSadhya</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#MalabarEats</a><a class="inline-flex items-center px-2 py-0.5 rounded-full bg-teal-50 text-teal-700 text-[10px] font-semibold hover:bg-teal-100 transition" href="#">#KoyilandyFood</a></div></div><div class="bg-slate-50 border-y border-slate-100 overflow-hidden"><div class="relative w-full h-44 bg-slate-900"><img alt="Mana Veg Foods banner" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6yyzdDZfxHDx-l4KVgP3fVVRPwSHDlwGiLnLd2Ghus0h1YuDO7S53QsEPkvOJy6ZackyCo7gdHkrzHKrLm98y7IGUXJx1p7AnKnOHaG8aTYHbjpoU4sgwkXxbl528be6p8y6rq6s4my_3o8ptHvfKSOClg96w-HeV6N73qW9eCShPqhfO56Cresm_QzJeOtrLjRGu6sE_fwxeM2Yssz7tx2-lzJSjUvgfArnwwLqwBu-RTKOWYzhSnk8pAhJPmtbhtQ"><div class="absolute top-2 left-2 flex items-center px-2 py-0.5 rounded-full bg-white/95 backdrop-blur-sm shadow-sm"><span class="text-[9px] font-bold text-slate-900 tracking-wider uppercase">FMCG &amp; HOSPITALITY</span></div></div><div class="px-3.5 py-2.5 bg-white flex items-center justify-between gap-2"><div class="min-w-0 flex-1"><h3 class="text-xs font-bold text-slate-900 leading-snug">Authentic Sadhya Corporate Catering &amp; Subscriptions</h3><p class="text-[10px] text-slate-500 mt-0.5">Daily &amp; Bulk Event Orders • Ulliyeri 19</p></div><div class="flex items-center gap-1.5 flex-shrink-0"><button class="h-8 px-2.5 rounded-lg bg-teal-600 hover:bg-teal-700 text-white text-[11px] font-bold flex items-center gap-1 shadow-sm active:scale-95 transition"><svg class="w-3 h-3 text-amber-300 fill-current" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg><span class="">Enquire</span></button><button class="h-8 px-2 rounded-lg bg-teal-50 hover:bg-teal-100 text-teal-700 text-[11px] font-semibold flex items-center gap-0.5 border border-teal-200/50 active:scale-95 transition"><span class="">Details</span><svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17l10-10M7 7h10v10"></path></svg></button></div></div></div><div class="px-3.5 py-2 flex items-center justify-between text-slate-500 text-[11px] border-b border-slate-100"><div class="flex items-center gap-1.5"><div class="flex items-center -space-x-1.5"><span class="w-4 h-4 rounded-full bg-teal-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">AK</span><span class="w-4 h-4 rounded-full bg-amber-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">SH</span></div><span class="font-semibold text-slate-600">78</span></div><div class="flex items-center gap-1.5 text-slate-400"><span class="hover:text-teal-700 transition cursor-pointer">12 comments</span><span class="">•</span><span class="hover:text-teal-700 transition cursor-pointer">5 reposts</span><span class="">•</span><span class="inline-flex items-center gap-0.5 hover:text-teal-700 transition"><svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"></path></svg>890</span></div></div><div class="px-2 py-1 flex items-center justify-around text-slate-500 text-xs font-semibold"><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Like</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Comment</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="">Repost</span></button><button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg><span class="">Share</span></button></div></article><!-- BEGIN: FeedPost3_CleanTech -->
+<article class="bg-white shadow-subtle border-teal-100/70 overflow-hidden flex flex-col mb-3.5 border-y" data-purpose="feed-post-cleantech-pilot">
+<div class="px-3.5 py-2 flex items-center justify-between text-slate-500 text-[11px] border-b border-slate-100">
+<div class="flex items-center gap-1.5">
+<div class="flex items-center -space-x-1.5">
+<span class="w-4 h-4 rounded-full bg-teal-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">FL</span>
+<span class="w-4 h-4 rounded-full bg-amber-500 text-white text-[8px] flex items-center justify-center font-bold border border-white">HN</span>
+</div>
+<span class="font-semibold text-slate-600">98</span>
+</div>
+<div class="flex items-center gap-1.5 text-slate-400">
+<span class="hover:text-teal-700 transition cursor-pointer font-semibold text-slate-600">14 comments</span>
+<span class="">•</span>
+<span class="hover:text-teal-700 transition cursor-pointer">6 reposts</span>
+<span class="">•</span>
+<span class="inline-flex items-center gap-0.5 hover:text-teal-700 transition">
+<svg class="w-3 h-3 text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7-10-7-10-7z"></path></svg>1.2k
+</span>
+</div>
+</div>
+<div class="px-2 py-1 flex items-center justify-around text-slate-500 text-xs font-semibold">
+<button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition">
+<svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="">Like</span>
+</button>
+<button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition">
+<svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="">Comment</span>
+</button>
+<button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<span class="">Repost</span>
+</button>
+<button class="flex items-center gap-1 py-1.5 px-2 rounded-lg hover:bg-slate-50 hover:text-teal-700 transition">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+<span class="">Share</span>
+</button>
+</div>
+<!-- BEGIN: InlineCommentPreview -->
+<!-- END: InlineCommentPreview -->
+</article>
+<!-- END: FeedPost3_CleanTech -->
+<!-- END: FeedPost2_LocalBusiness -->
+</main>
+<!-- BEGIN: FloatingAIAssistant -->
+<!-- AI assistant floating bubble inspired by screenshot -->
+<!-- BEGIN: SideDiscoverPullTab --><aside aria-label="Discover Quick Pull Tab" class="fixed right-0 top-1/3 z-40 select-none pointer-events-auto"><a class="flex items-center gap-1.5 pl-3 pr-2 py-2.5 rounded-l-full bg-slate-900/95 backdrop-blur-md border-l border-y border-teal-300/40 text-white shadow-floating hover:bg-teal-900 transition-all duration-300 group cursor-pointer active:scale-95" href="#discover-hub" title="Open Discover"><svg class="w-3.5 h-3.5 text-teal-300 stroke-current transform group-hover:-translate-x-0.5 transition-transform" fill="none" stroke-width="2.5" viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="text-xs">✨</span><span class="text-[11px] font-bold tracking-tight text-white pr-0.5">Discover</span><span class="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span></a></aside><!-- END: SideDiscoverPullTab --><div class="fixed bottom-20 right-4 z-50 max-w-md pointer-events-auto">
+<button aria-label="Open AI Assistant" class="relative group p-1 rounded-full focus:outline-none" type="button">
+<span class="absolute inset-0 rounded-full bg-teal-400 blur-md opacity-70 group-hover:opacity-100 transition animate-pulse"></span>
+<div class="relative w-12 h-12 rounded-full bg-gradient-to-tr from-slate-900 via-teal-950 to-teal-800 p-0.5 shadow-floating flex items-center justify-center border border-teal-300/60 transition transform group-hover:scale-105 active:scale-95">
+<!-- Robot/Smiley AI Face SVG -->
+<div class="w-7 h-7 rounded-full bg-slate-900 flex items-center justify-center gap-1">
+<span class="w-1.5 h-1.5 bg-teal-300 rounded-full"></span>
+<span class="w-1.5 h-1.5 bg-teal-300 rounded-full"></span>
+</div>
+</div>
+</button>
+</div>
+<!-- END: FloatingAIAssistant -->
+<!-- BEGIN: BottomNavigation -->
+<!-- Modern compact bottom tab bar -->
+<nav class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-teal-100 max-w-md mx-auto py-1 px-3 shadow-lg" data-purpose="bottom-tab-bar">
+<div class="grid grid-cols-5 items-center">
+<!-- Tab: Feed (Active) -->
+<a class="flex flex-col items-center justify-center py-1 group" href="#">
+<div class="relative p-1 text-teal-700">
+<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+<path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path>
+</svg>
+<span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-1 h-1 bg-teal-600 rounded-full"></span>
+</div>
+<span class="text-[10px] font-bold text-teal-700 mt-0.5">Feed</span>
+</a>
+<!-- Tab: Network -->
+<a class="flex flex-col items-center justify-center py-1 text-slate-500 hover:text-teal-700 group transition" href="#">
+<div class="p-1">
+<svg class="w-5 h-5 stroke-current" fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-[10px] font-medium group-hover:text-teal-700 mt-0.5">Network</span>
+</a>
+<!-- Tab: Grow -->
+<a class="flex flex-col items-center justify-center py-1 text-slate-500 hover:text-teal-700 group transition" href="#">
+<div class="p-1">
+<svg class="w-5 h-5 stroke-current" fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-[10px] font-medium group-hover:text-teal-700 mt-0.5">Grow</span>
+</a>
+<!-- Tab: Academy -->
+<a class="flex flex-col items-center justify-center py-1 text-slate-500 hover:text-teal-700 group transition" href="#">
+<div class="p-1">
+<svg class="w-5 h-5 stroke-current" fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M12 14l9-5-9-5-9 5 9 5z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-[10px] font-medium group-hover:text-teal-700 mt-0.5">Academy</span>
+</a>
+<!-- Tab: Events -->
+<a class="flex flex-col items-center justify-center py-1 text-slate-500 hover:text-teal-700 group transition" href="#">
+<div class="p-1">
+<svg class="w-5 h-5 stroke-current" fill="none" stroke-width="1.8" viewBox="0 0 24 24">
+<path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-[10px] font-medium group-hover:text-teal-700 mt-0.5">Events</span>
+</a>
+</div>
+</nav>
+<!-- END: BottomNavigation -->
+</div>
+
+
+
+
+</body></html>
